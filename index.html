@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-Up Form</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="javascript.js" defer></script>
+    <link rel="icon" href="./imgs/keycapSVG.svg">
+</head>
+<body>
+<div id="content">
+    <div class="image">
+        <div class="imageBanner">
+            <img class= 'logoImg' src="./imgs/keycapSVG.svg" alt="Keycap Logo"> Keebland
+        </div>
+        <div class="imageCitation">
+            Photo by &nbsp;<a href="https://unsplash.com/@wokeyfactory">Wokey Factory</a>&nbsp; on &nbsp;<a href="https://unsplash.com/">Unsplash</a>&nbsp;
+        </div>
+    </div>
+<div id="signUpArea">
+    <div id="joinUs">Keebland gives you access to a community of keyboard enthusiast. You can find members discussing acoustics, board and kits, keycap sets, switches, and everything else that has to do with keyboards. <br><br>New enthusiast can learn everything they need to here, so don't be shy!</div>
+    <form action="#">
+        <div id="userInfo">
+            <h3>Sign-Up Form</h3>
+            <div class="fetch">  
+                <div class="input">
+                    <label for="firstName">First Name</label>
+                    <input type="text" id="firstName" name="firstName" >
+                </div>
+                <div class="input">
+                    <label for="lastName"> Last Name</label>
+                    <input type="text" name="lastName" id="lastName" >
+                </div>
+                <div class="input">
+                    <label for="userEmail">Email</label>
+                    <input type="email" name="email" id="userEmail" placeholder="you@example.com"> 
+                </div>
+                <div class="input">
+                    <label for="tel">Phone Number</label>
+                    <input type="tel" id="tel" name="tel">
+                </div>
+                <div class="input">
+                    <label for="password">Password</label>
+                    <input type="password" name="password" id="password" required>
+                    <div id="noMatch"></div>
+                </div>
+                <div class="input">
+                    <label for="passwordConfirm">Confirm Password</label>
+                    <input type="password" name="passwordConfirm" id="passwordConfirm" required>
+                </div>
+            </div>  
+        </div> 
+        <button type="submit" id="submitButton">Create Account</button>
+    </form>
+    <div id="logIn">Already have an account? <a href="#">Log In</a> </div>
+</div>
+</div>
+</body>
+</html>
